@@ -1,0 +1,106 @@
+=======================
+2/4/2019 Notes
+=======================
+
+``We have a quiz that we need to do online.``
+
+``Need to read the reading for today.``
+
+
+Flood Probability
+===================
+
+Define our random variable
+
+:math:`X_i`
+
+Which is the largst peak discharge in year i.
+
+Events (flood)
+
+:math:`\{X_i \geq x_p\}` is a flood event
+
+:math:`P\{X_i \geq x_p\} = p` execedance probability
+
+
+
+Probability Theory
+--------------------
+
+**Random Variables**
+
+:math:`P\{flood\} + P\{NoFlood\} = 1` is the total probability.
+
+:math:`P\{NoFlood\} = 1 - P\{flood\}`
+
+:math:`P\{X_i < x_p\} = 1 - p` Non-excedance probability
+
+
+**Independence**
+
+:math:`P\{No Flood in 2 years\} = P\{No Flood, Yr 1\} * P\{No Flood, Yr 2\}`
+
+:math:`P\{No Flood in 2 years\} = (1-p)(1-p)`
+
+:math:`P\{No Flood in M Years\} = (1-p)(1-p)...(1-p) = (1-p)^M`
+
+**Risk**
+
+:math:`R = P\{At Least 1 event in M years\}`
+:math:`R = 1 - P\{No Floods in M years\}`
+:math:`R = 1 - (1 - p)^M`
+
+
+
+Return Period
+---------------
+
+``Drawing a timeline with a flood threshold dotted line``
+
+``Charting over time the occurence of a flood event``
+
+``The time between each occurence is called the RECURRENCE INTERVAL``
+
+Define: T, **return period**, average recurrence interval of a given event.
+
+:math:`T = \frac{1}{p}`
+
+
+
+Frequency Analysis
+-------------------
+
+Estimate probabilities from sample data.
+
+Typical Frequency Analysis problems
+
+If :math:`x_p` is known --> what is the probability, :math:`P` that it is exceeded? Estimate :math:`p(\hat{p})` or :math:`T(\hat{T})`
+
+``Hats mean estimates``
+
+
+If :math:`p` or :math:`T` known --> estimate :math:`x_p(\hat{x_p})` or :math:`x_t(\hat{x_T})`
+
+
+US Federal Method - Bulletin 17C
+-------------------------------------
+**Log Pearson Type III Distribution**
+
+- Take the logarithms of sample data 
+	:math:`y_i = log(Q_i)` where :math:`i = 1,..,N`
+
+- Estimate Moments
+	:math:`\mu_y,\sigma_y,\gamma_y` which are estimated from :math:`\hat{\mu_y}, \hat{\sigma_y}, \hat{\gamma_y}`
+
+	These are mean, standard deviation, skew coefficient
+
+- Find a weighted skew coefficient :math:`\hat{\gamma_w}`
+	:math:`\hat{\gamma_R}, \hat{MSE_{\gamma_R}}`
+
+- Quantile Estimate
+	:math:`log{\hat{Q_T}} = \hat{\mu_y} + K(T,\hat{\gamma_w}) * \hat{\sigma_y}`
+
+
+``There's a discussion on the regional skew estimate.``
+``Iowa's study resulted in a regional skew of -0.40``
+

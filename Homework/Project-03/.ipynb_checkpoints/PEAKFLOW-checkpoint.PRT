@@ -1,0 +1,348 @@
+1
+  Program PeakFq           U. S. GEOLOGICAL SURVEY             Seq.000.000
+  Version 7.2         Annual peak flow frequency analysis      Run Date / Time
+  3/28/2018                                                     02/06/2019 02:46
+
+                         --- PROCESSING OPTIONS ---  
+
+                      Plot option         = None              
+                      Basin char output   = None          
+                      Print option        = Yes
+                      Debug print         = No 
+                      Input peaks listing = Long 
+                      Input peaks format  = WATSTORE peak file  
+
+                      Input files used:
+                         peaks (ascii)  - C:\Users\Hail\Desktop\Classes\CEE-5350-Watershed-Hydrology-and-Ecosystem-Processes\Homework\Project-03\PEAKFLOW         
+                         specifications - C:\Users\Hail\Desktop\Classes\CEE-5350-Watershed-Hydrology-and-Ecosystem-Processes\Homework\Project-03\PKFQWPSF.TMP     
+                      Output file(s): 
+                         main - C:\Users\Hail\Desktop\Classes\CEE-5350-Watershed-Hydrology-and-Ecosystem-Processes\Homework\Project-03\PEAKFLOW.PRT     
+
+
+  ***  User responsible for assessment and interpretation of the following analysis  ***
+  
+1
+
+
+                       Kendall's Tau Parameters
+
+                                        MEDIAN   No. of
+                       TAU    P-VALUE    SLOPE   PEAKS
+               ---------------------------------------
+    GAGED PEAKS     -0.093      0.281    -10.242    64
+
+
+1
+
+
+  Program PeakFq           U. S. GEOLOGICAL SURVEY             Seq.001.001
+  Version 7.2         Annual peak flow frequency analysis      Run Date / Time
+  3/28/2018                                                     02/06/2019 02:46
+  
+            Station - 04045500  TAHQUAMENON RIVER NEAR PARADISE, MI             
+
+
+     TABLE 3 - ANNUAL FREQUENCY CURVE PARAMETERS -- LOG-PEARSON TYPE III 
+
+                                    LOGARITHMIC         
+                         -------------------------------
+                                      STANDARD          
+                            MEAN     DEVIATION     SKEW 
+                         -------------------------------
+ EMA WITHOUT REG SKEW      0.0000      0.0000      0.000
+ EMA WITH REG SKEW         0.0000      0.0000      0.000
+
+ EMA ESTIMATE OF MSE OF SKEW WITHOUT REG SKEW              0.0000
+ EMA ESTIMATE OF MSE OF SKEW W/GAGED PEAKS ONLY (AT-SITE)  0.0000
+
+
+
+ TABLE 4 - ANNUAL FREQUENCY CURVE -- DISCHARGES AT SELECTED EXCEEDANCE PROBABILITIES
+
+   ANNUAL   <- EMA ESTIMATE ->    <- FOR EMA ESTIMATE WITH REG SKEW ->
+EXCEEDANCE   WITH     WITHOUT     LOG VARIANCE   <-CONFIDENCE LIMITS->
+PROBABILITY REG SKEW  REG SKEW       OF EST.     5% LOWER    95% UPPER
+
+
+ *Note: If Station Skew option is selected then EMA ESTIMATE WITH REG SKEW will
+        display values for and be equal to EMA ESTIMATE WITHOUT REG SKEW.
+1
+
+
+  Program PeakFq           U. S. GEOLOGICAL SURVEY             Seq.001.002
+  Version 7.2         Annual peak flow frequency analysis      Run Date / Time
+  3/28/2018                                                     02/06/2019 02:46
+  
+            Station - 04045500  TAHQUAMENON RIVER NEAR PARADISE, MI             
+
+
+                       TABLE 5 - INPUT DATA LISTING
+
+
+    WATER       PEAK   PEAKFQ  FLOW INTERVALS (WHERE LOWER BOUND NOT = UPPER BOUND)
+     YEAR      VALUE    CODES  LOWER BOUND  UPPER BOUND  REMARKS
+     1954     4850.0       
+     1955     4850.0       
+     1956     3340.0       
+     1957     5740.0       
+     1958     2770.0       
+     1959     4520.0       
+     1960     6990.0       
+     1961     2680.0       
+     1962     4590.0       
+     1963     3810.0       
+     1964     4490.0       
+     1965     4300.0       
+     1966     2970.0       
+     1967     4790.0       
+     1968     4260.0       
+     1969     5240.0       
+     1970     3770.0       
+     1971     5980.0       
+     1972     6540.0       
+     1973     3000.0       
+     1974     4980.0       
+     1975     4590.0       
+     1976     5360.0       
+     1977     5600.0       
+     1978     4200.0       
+     1979     5520.0       
+     1980     4260.0       
+     1981     4730.0       
+     1982     5140.0       
+     1983     3050.0       
+     1984     3480.0       
+     1985     6700.0       
+     1986     5360.0       
+     1987     2170.0       
+     1988     5620.0       
+     1989     3240.0       
+     1990     3060.0       
+     1991     4790.0       
+     1992     3750.0       
+     1993     3300.0       
+     1994     4110.0       
+     1995     2530.0       
+     1996     5120.0       
+     1997     3840.0       
+     1998     3880.0       
+     1999     4230.0       
+     2000     3560.0       
+     2001     5290.0       
+     2002     5870.0       
+     2003     5180.0       
+     2004     3720.0       
+     2005     4180.0       
+     2006     3290.0       
+     2007     3860.0       
+     2008     5770.0       
+     2009     3140.0       
+     2010     2800.0       
+     2011     3500.0       
+     2012     2900.0       
+     2013     4920.0       
+     2014     6050.0       
+     2015     4790.0       
+     2016     3260.0       
+     2017     3940.0       
+
+
+        Explanation of peak discharge qualification codes
+
+       PeakFQ    NWIS
+        CODE     CODE   DEFINITION
+
+          D        3    Dam failure, non-recurrent flow anomaly
+          G        8    Discharge greater than stated value
+          X       3+8   Both of the above
+          L        4    Discharge less than stated value
+          K     6 OR C  Known effect of regulation or urbanization
+          H        7    Historic peak
+
+          -  Minus-flagged discharge -- Not used in computation
+                -8888.0 -- No discharge value given
+          -  Minus-flagged water year -- Historic peak used in computation
+
+
+
+1
+
+
+  Program PeakFq           U. S. GEOLOGICAL SURVEY             Seq.001.003
+  Version 7.2         Annual peak flow frequency analysis      Run Date / Time
+  3/28/2018                                                     02/06/2019 02:46
+  
+            Station - 04045500  TAHQUAMENON RIVER NEAR PARADISE, MI             
+
+
+  TABLE 6 - EMPIRICAL FREQUENCY CURVES -- HIRSCH-STEDINGER PLOTTING POSITIONS
+
+   WATER     RANKED      EMA      FLOW INTERVALS (WHERE LOWER BOUND NOT = UPPER BOUND)
+    YEAR   DISCHARGE   ESTIMATE   LOWER BOUND  UPPER BOUND
+    1954     4850.0     0.0000
+    1955     4850.0     0.0000
+    1956     3340.0     0.0000
+    1957     5740.0     0.0000
+    1958     2770.0     0.0000
+    1959     4520.0     0.0000
+    1960     6990.0     0.0000
+    1961     2680.0     0.0000
+    1962     4590.0     0.0000
+    1963     3810.0     0.0000
+    1964     4490.0     0.0000
+    1965     4300.0     0.0000
+    1966     2970.0     0.0000
+    1967     4790.0     0.0000
+    1968     4260.0     0.0000
+    1969     5240.0     0.0000
+    1970     3770.0     0.0000
+    1971     5980.0     0.0000
+    1972     6540.0     0.0000
+    1973     3000.0     0.0000
+    1974     4980.0     0.0000
+    1975     4590.0     0.0000
+    1976     5360.0     0.0000
+    1977     5600.0     0.0000
+    1978     4200.0     0.0000
+    1979     5520.0     0.0000
+    1980     4260.0     0.0000
+    1981     4730.0     0.0000
+    1982     5140.0     0.0000
+    1983     3050.0     0.0000
+    1984     3480.0     0.0000
+    1985     6700.0     0.0000
+    1986     5360.0     0.0000
+    1987     2170.0     0.0000
+    1988     5620.0     0.0000
+    1989     3240.0     0.0000
+    1990     3060.0     0.0000
+    1991     4790.0     0.0000
+    1992     3750.0     0.0000
+    1993     3300.0     0.0000
+    1994     4110.0     0.0000
+    1995     2530.0     0.0000
+    1996     5120.0     0.0000
+    1997     3840.0     0.0000
+    1998     3880.0     0.0000
+    1999     4230.0     0.0000
+    2000     3560.0     0.0000
+    2001     5290.0     0.0000
+    2002     5870.0     0.0000
+    2003     5180.0     0.0000
+    2004     3720.0     0.0000
+    2005     4180.0     0.0000
+    2006     3290.0     0.0000
+    2007     3860.0     0.0000
+    2008     5770.0     0.0000
+    2009     3140.0     0.0000
+    2010     2800.0     0.0000
+    2011     3500.0     0.0000
+    2012     2900.0     0.0000
+    2013     4920.0     0.0000
+    2014     6050.0     0.0000
+    2015     4790.0     0.0000
+    2016     3260.0     0.0000
+    2017     3940.0     0.0000
+1
+
+
+  Program PeakFq           U. S. GEOLOGICAL SURVEY             Seq.001.004
+  Version 7.2         Annual peak flow frequency analysis      Run Date / Time
+  3/28/2018                                                     02/06/2019 02:46
+  
+            Station - 04045500  TAHQUAMENON RIVER NEAR PARADISE, MI             
+
+
+                    TABLE 7 - EMA REPRESENTATION OF DATA
+
+                                                   <---- USER-ENTERED ----><-------- FINAL ------->
+  WATER <----- OBSERVED ----><-------- EMA -------><- PERCEPTIBLE RANGES -><- PERCEPTIBLE RANGES ->
+   YEAR    Q_LOWER    Q_UPPER    Q_LOWER    Q_UPPER       LOWER       UPPER       LOWER       UPPER
+   1954     4850.0     4850.0        1.0        1.0         0.0        INF          1.0         1.0
+   1955     4850.0     4850.0        1.0        1.0         0.0        INF          1.0         1.0
+   1956     3340.0     3340.0        1.0        1.0         0.0        INF          1.0         1.0
+   1957     5740.0     5740.0        1.0        1.0         0.0        INF          1.0         1.0
+   1958     2770.0     2770.0        1.0        1.0         0.0        INF          1.0         1.0
+   1959     4520.0     4520.0        1.0        1.0         0.0        INF          1.0         1.0
+   1960     6990.0     6990.0        1.0        1.0         0.0        INF          1.0         1.0
+   1961     2680.0     2680.0        1.0        1.0         0.0        INF          1.0         1.0
+   1962     4590.0     4590.0        1.0        1.0         0.0        INF          1.0         1.0
+   1963     3810.0     3810.0        1.0        1.0         0.0        INF          1.0         1.0
+   1964     4490.0     4490.0        1.0        1.0         0.0        INF          1.0         1.0
+   1965     4300.0     4300.0        1.0        1.0         0.0        INF          1.0         1.0
+   1966     2970.0     2970.0        1.0        1.0         0.0        INF          1.0         1.0
+   1967     4790.0     4790.0        1.0        1.0         0.0        INF          1.0         1.0
+   1968     4260.0     4260.0        1.0        1.0         0.0        INF          1.0         1.0
+   1969     5240.0     5240.0        1.0        1.0         0.0        INF          1.0         1.0
+   1970     3770.0     3770.0        1.0        1.0         0.0        INF          1.0         1.0
+   1971     5980.0     5980.0        1.0        1.0         0.0        INF          1.0         1.0
+   1972     6540.0     6540.0        1.0        1.0         0.0        INF          1.0         1.0
+   1973     3000.0     3000.0        1.0        1.0         0.0        INF          1.0         1.0
+   1974     4980.0     4980.0        1.0        1.0         0.0        INF          1.0         1.0
+   1975     4590.0     4590.0        1.0        1.0         0.0        INF          1.0         1.0
+   1976     5360.0     5360.0        1.0        1.0         0.0        INF          1.0         1.0
+   1977     5600.0     5600.0        1.0        1.0         0.0        INF          1.0         1.0
+   1978     4200.0     4200.0        1.0        1.0         0.0        INF          1.0         1.0
+   1979     5520.0     5520.0        1.0        1.0         0.0        INF          1.0         1.0
+   1980     4260.0     4260.0        1.0        1.0         0.0        INF          1.0         1.0
+   1981     4730.0     4730.0        1.0        1.0         0.0        INF          1.0         1.0
+   1982     5140.0     5140.0        1.0        1.0         0.0        INF          1.0         1.0
+   1983     3050.0     3050.0        1.0        1.0         0.0        INF          1.0         1.0
+   1984     3480.0     3480.0        1.0        1.0         0.0        INF          1.0         1.0
+   1985     6700.0     6700.0        1.0        1.0         0.0        INF          1.0         1.0
+   1986     5360.0     5360.0        1.0        1.0         0.0        INF          1.0         1.0
+   1987     2170.0     2170.0        1.0        1.0         0.0        INF          1.0         1.0
+   1988     5620.0     5620.0        1.0        1.0         0.0        INF          1.0         1.0
+   1989     3240.0     3240.0        1.0        1.0         0.0        INF          1.0         1.0
+   1990     3060.0     3060.0        1.0        1.0         0.0        INF          1.0         1.0
+   1991     4790.0     4790.0        1.0        1.0         0.0        INF          1.0         1.0
+   1992     3750.0     3750.0        1.0        1.0         0.0        INF          1.0         1.0
+   1993     3300.0     3300.0        1.0        1.0         0.0        INF          1.0         1.0
+   1994     4110.0     4110.0        1.0        1.0         0.0        INF          1.0         1.0
+   1995     2530.0     2530.0        1.0        1.0         0.0        INF          1.0         1.0
+   1996     5120.0     5120.0        1.0        1.0         0.0        INF          1.0         1.0
+   1997     3840.0     3840.0        1.0        1.0         0.0        INF          1.0         1.0
+   1998     3880.0     3880.0        1.0        1.0         0.0        INF          1.0         1.0
+   1999     4230.0     4230.0        1.0        1.0         0.0        INF          1.0         1.0
+   2000     3560.0     3560.0        1.0        1.0         0.0        INF          1.0         1.0
+   2001     5290.0     5290.0        1.0        1.0         0.0        INF          1.0         1.0
+   2002     5870.0     5870.0        1.0        1.0         0.0        INF          1.0         1.0
+   2003     5180.0     5180.0        1.0        1.0         0.0        INF          1.0         1.0
+   2004     3720.0     3720.0        1.0        1.0         0.0        INF          1.0         1.0
+   2005     4180.0     4180.0        1.0        1.0         0.0        INF          1.0         1.0
+   2006     3290.0     3290.0        1.0        1.0         0.0        INF          1.0         1.0
+   2007     3860.0     3860.0        1.0        1.0         0.0        INF          1.0         1.0
+   2008     5770.0     5770.0        1.0        1.0         0.0        INF          1.0         1.0
+   2009     3140.0     3140.0        1.0        1.0         0.0        INF          1.0         1.0
+   2010     2800.0     2800.0        1.0        1.0         0.0        INF          1.0         1.0
+   2011     3500.0     3500.0        1.0        1.0         0.0        INF          1.0         1.0
+   2012     2900.0     2900.0        1.0        1.0         0.0        INF          1.0         1.0
+   2013     4920.0     4920.0        1.0        1.0         0.0        INF          1.0         1.0
+   2014     6050.0     6050.0        1.0        1.0         0.0        INF          1.0         1.0
+   2015     4790.0     4790.0        1.0        1.0         0.0        INF          1.0         1.0
+   2016     3260.0     3260.0        1.0        1.0         0.0        INF          1.0         1.0
+   2017     3940.0     3940.0        1.0        1.0         0.0        INF          1.0         1.0
+1
+
+
+
+ End PeakFQ analysis.
+   Stations processed :       1
+   Number of errors   :       0
+   Stations skipped   :       0
+   Station years      :      64
+
+
+Data records may have been ignored for the stations listed below.               
+(Card type must be Y, Z, N, H, I, 2, 3, 4,  or *.)                              
+(2, 4, and * records are ignored.)                                              
+                                                                                
+ For the station below, the following records were ignored:                     
+                                                                                
+ FINISHED PROCESSING STATION:  04045500       USGS TAHQUAMENON RIVER NEAR PARADI
+                                                                                
+                                                                                
+ For the station below, the following records were ignored:                     
+                                                                                
+ FINISHED PROCESSING STATION:                                                   
+                                                                                

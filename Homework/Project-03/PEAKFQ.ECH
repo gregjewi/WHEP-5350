@@ -1,0 +1,18 @@
+# US Geological Survey
+# PeakFQ Flood Frequency Analysis, Version 7.2 dated 3/28/2018
+#
+# Analyzed:  02/06/2019 11:13
+#
+# Summary of input parameters
+#
+STATION	OPTION	BEGYR	ENDYR	SKEWOPT	GENSKEW	SKEWSTD	SKEWMSE	LO OUT	LO TEST	HI OUT	GAGEB	URB/REG	LATITUDE	LONGITUDE
+04045500          	EMA 	1954	2017	WEIGHTED   	 0.120	 0.200	 0.040	      0.	MGBT	      0.	      0.	NO 	  46.575	  85.269
+#
+# Perception Thresholds
+#
+Station	OrderNo	Begin	End	Low	High	Comment
+04045500-2          	   1	1954	2017	      0.	 0.1E+21	DEFAULT                                                                         
+#
+# Interval Data
+#
+Station	OrderNo	Date	Low	High	Comment

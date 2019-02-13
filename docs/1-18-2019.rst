@@ -1,0 +1,73 @@
+1/18/2019 Notes
+=========================
+
+Water Balance
+---------------------
+
+Conservation of Mass primary form is:
+
+	:math:`\Delta S = \bar{I} - \bar{Q}`
+
+	where:
+
+		:math:`\Delta S` : Change in Storage
+		:math:`\bar{I}`: Inflow
+		:math:`\bar{Q}` : Outflow
+
+	One note is the timestep or :math:`\Delta t` is user-defined (month, day, year, etc.)
+
+	Units:
+
+		* kg
+		* cubic meters [m^3]
+		* :math:`\frac{ft}{sec} * day`
+		* milimeters [mm]
+
+
+Another form of Conservation of Mass is:
+
+	:math:`\frac{\Delta S}{\Delta t} = I - Q`
+
+	or
+
+	:math:`\frac{dS}{dt} = I - Q`
+
+
+Land Surface "Water Budget"
+----------------------------
+``He's drawing a picture of a control volume that includes "Johnson County" land surface, subsurface, atmosphere just above the ground.``
+
+Inflows:
+	- Precip
+	- Q in
+	- Groundwater Inflow
+
+Outflows:
+	- ET
+	- Q out
+	- Groundwater Out
+
+Math looks like:
+
+:math:`\Delta S = (P - E) + (Q_i - Q_o) + (G_i - G_o)`
+ 
+``Can make a simplification if you define your control volume as a watershed boundary instead of political boundaries.``
+
+``Assume drainage divide for subsurface is approximately the same as surface boundary``
+
+Math simplifies to:
+
+:math:`\Delta S = P - E - Q_o`
+
+Over the long term :math:`\Delta S = 0`, and so we can rewrite the equation as:
+
+:math:`\Delta S \approx 0 = P - E - Q_o`
+
+or
+
+:math:`P = E + Q_o`
+
+
+Delineation of a Watershed
+---------------------------
+Do it by hand. Cross elevations perpendicularly. Cross check with online tools.

@@ -1,0 +1,52 @@
+1/25/2019 Notes
+=======================
+
+Today we finished up with the water plan presentations.
+- Texas
+- India
+- Turkey River
+- California
+
+
+Now we're going to talk about the water cycle.
+
+Water Cycle Components
+------------------------
+
+``Analyzing a watershed via the first principles of the water cycle``
+
+Looking at English River watershed. 
+"Normal precipitation" to NOAA NCDC means a 30-year mean. 
+Iowa sees more precipitation (peak) in early summer, latespring (April - June) then decreases back to autumn.
+
+
+Annual Water Cycle for the English River Watershed:
+	- Pricipation: 36.5 in. (100%)
+	- Evaporation: 25.3 in. (69%)
+	- Streamflow: 11.2 in. (31%)
+
+Evaporation is a very high proportion of total precip for this gauge.
+
+Flow in the river channel (measured at a gauge) can be partioned into:
+	- Streamflow (direct runoff)
+	- Baseflow (groundwater based)
+
+.. image:: images/baseflow.jpg
+
+For the English River:
+	- Total Streamflow: 11.2 in (100%)
+	- Direct Runoff: 5.0 in (45%)
+	- Baseflow: 6.2 in (55%)
+
+
+Can look at the flood events (Climatologically).
+For the Enlish River at Kalona there are 25 flood events in 75 years (about 33% of the years).
+Can plot them on a single year scale (Jan - Dec) and make inferences about the time of year that floods occur on.
+
+
+``Reviewing the Project 1 directions now.``
+
+Project 1 Notes
+----------------
+
+1. Find a stream gauge that isn't regulated.

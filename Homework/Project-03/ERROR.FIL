@@ -1,0 +1,422 @@
+ MAIN:Reading Specification file: 
+ C:\Users\Hail\Desktop\Classes\CEE-5350-Watershed-Hydrology-and-Ecosystem-Proces
+ ses\Homework\Project-03\PKFQWPSF.TMP                                           
+                                                                                
+    
+ Scanning Spec file for stations. Spec file contents:
+   Verbose                                                                      
+                                            
+   I ASCI PEAKFLOW                                                              
+                                            
+   O File PEAKFLOW.P                                                            
+                                            
+   O Plot Style Graphics                                                        
+                                            
+   O Plot Format PNG                                                            
+                                            
+   O Additional Tab PEAKFLOW.bcd                                                
+                                            
+   O Empirical PEAKFLOW.emp                                                     
+                                            
+   O EMA YES                                                                    
+                                            
+   Station 04045500                                                             
+                                            
+        Analyze EMA                                                             
+                                            
+        PCPT_Thresh 1954 2017 0 1E+20 Default                                   
+                                            
+        BegYear 1954                                                            
+                                            
+        EndYear 2017                                                            
+                                            
+        HistPeriod 64                                                           
+                                            
+        SkewOpt Weighted                                                        
+                                            
+        GenSkew 0.12                                                            
+                                            
+        SkewSE 0.2                                                              
+                                            
+        LOType MGBT                                                             
+                                            
+        Latitude 46.575                                                         
+                                            
+        Longitude 85.26945                                                      
+                                            
+        PlotName 04045500                                                       
+                                            
+ Finished scan of Spec file.
+ MAIN:Found            1  Stations
+ MAIN:Process Record:'Verbose'
+ MAIN:Process Record:'I ASCI PEAKFLOW'
+ MAIN:Got I, Remaining:'ASCI PEAKFLOW'
+ OPNINP:Successful Open Watstore file:'PEAKFLOW'
+ MAIN:Process Record:'O File PEAKFLOW.P'
+ MAIN:Got O, Remaining:'FILE PEAKFLOW.P'
+ OPENOUT:Opened Output File:'PEAKFLOW.P'
+ MAIN:Process Record:'O Plot Style Graphics'
+ MAIN:Got O, Remaining:'PLOT STYLE GRAPHICS'
+ MAIN:Process Record:'O Plot Format PNG'
+ MAIN:Got O, Remaining:'PLOT FORMAT PNG'
+ MAIN:Process Record:'O Additional Tab PEAKFLOW.bcd'
+ MAIN:Got O, Remaining:'ADDITIONAL TAB PEAKFLOW.BCD'
+ MAIN:Process Record:'O Empirical PEAKFLOW.emp'
+ MAIN:Got O, Remaining:'EMPIRICAL PEAKFLOW.EMP'
+ OPENOUT:Opened EMPIRICAL Output File:'PEAKFLOW.EMP'
+ MAIN:Process Record:'O EMA YES'
+ MAIN:Got O, Remaining:'EMA YES'
+ MAIN:Process Record:'Station 04045500'
+ MAIN:Got STATION, Remaining:'04045500'
+ MAIN:Assigned 04045500        to index            1  of STASPECS
+ MAIN:Process RecordX:'     ANALYZE EMA'
+ MAIN:Add Record To Station Specs
+ MAIN:LNSPECS:           1
+ MAIN:Assign spec:'ANALYZE EMA'
+ MAIN:Process RecordX:'     PCPT_THRESH 1954 2017 0 1E+20 DEFAULT'
+ MAIN:Add Record To Station Specs
+ MAIN:Add to existing specs
+ MAIN:LNSPECS:           2
+ MAIN:Assign spec:'PCPT_THRESH 1954 2017 0 1E+20 DEFAULT'
+ MAIN:Process RecordX:'     BEGYEAR 1954'
+ MAIN:Add Record To Station Specs
+ MAIN:Add to existing specs
+ MAIN:LNSPECS:           3
+ MAIN:Assign spec:'BEGYEAR 1954'
+ MAIN:Process RecordX:'     ENDYEAR 2017'
+ MAIN:Add Record To Station Specs
+ MAIN:Add to existing specs
+ MAIN:LNSPECS:           4
+ MAIN:Assign spec:'ENDYEAR 2017'
+ MAIN:Process RecordX:'     HISTPERIOD 64'
+ MAIN:Add Record To Station Specs
+ MAIN:Add to existing specs
+ MAIN:LNSPECS:           5
+ MAIN:Assign spec:'HISTPERIOD 64'
+ MAIN:Process RecordX:'     SKEWOPT WEIGHTED'
+ MAIN:Add Record To Station Specs
+ MAIN:Add to existing specs
+ MAIN:LNSPECS:           6
+ MAIN:Assign spec:'SKEWOPT WEIGHTED'
+ MAIN:Process RecordX:'     GENSKEW 0.12'
+ MAIN:Add Record To Station Specs
+ MAIN:Add to existing specs
+ MAIN:LNSPECS:           7
+ MAIN:Assign spec:'GENSKEW 0.12'
+ MAIN:Process RecordX:'     SKEWSE 0.2'
+ MAIN:Add Record To Station Specs
+ MAIN:Add to existing specs
+ MAIN:LNSPECS:           8
+ MAIN:Assign spec:'SKEWSE 0.2'
+ MAIN:Process RecordX:'     LOTYPE MGBT'
+ MAIN:Add Record To Station Specs
+ MAIN:Add to existing specs
+ MAIN:LNSPECS:           9
+ MAIN:Assign spec:'LOTYPE MGBT'
+ MAIN:Process RecordX:'     LATITUDE 46.575'
+ MAIN:Add Record To Station Specs
+ MAIN:Add to existing specs
+ MAIN:LNSPECS:          10
+ MAIN:Assign spec:'LATITUDE 46.575'
+ MAIN:Process RecordX:'     LONGITUDE 85.26945'
+ MAIN:Add Record To Station Specs
+ MAIN:Add to existing specs
+ MAIN:LNSPECS:          11
+ MAIN:Assign spec:'LONGITUDE 85.26945'
+ MAIN:Process RecordX:'     PLOTNAME 04045500'
+ MAIN:Add Record To Station Specs
+ MAIN:Add to existing specs
+ MAIN:LNSPECS:          12
+ MAIN:Assign spec:'PLOTNAME 04045500'
+ MAIN:          12  spec(s) for station 04045500       
+   Spec           1 : 'ANALYZE EMA'
+   Spec           2 : 'PCPT_THRESH 1954 2017 0 1E+20 DEFAULT'
+   Spec           3 : 'BEGYEAR 1954'
+   Spec           4 : 'ENDYEAR 2017'
+   Spec           5 : 'HISTPERIOD 64'
+   Spec           6 : 'SKEWOPT WEIGHTED'
+   Spec           7 : 'GENSKEW 0.12'
+   Spec           8 : 'SKEWSE 0.2'
+   Spec           9 : 'LOTYPE MGBT'
+   Spec          10 : 'LATITUDE 46.575'
+   Spec          11 : 'LONGITUDE 85.26945'
+   Spec          12 : 'PLOTNAME 04045500'
+ Done reading spec file
+ MAIN:calling J407XE...
+ J407XE:IA1:           9  INFORM:           2  MSG1:          14
+ After INPUT - NSYS,NHIST,EMAOPT          64           0           1
+ After UPDATEPEAKS - NSYS,NHIST,EMAOPT          64           0           1
+ SETEMADATA: NTHRESH =           1
+ SETEMADATA: THRBYR,   THREYR,   THRLWR,       THRUPR
+        1954        2017  0.0000000E+00  1.0000000E+20
+ Debug Info for 
+ 04045500       USGS TAHQUAMENON RIVER NEAR PARADISE, MI             1954-2017 *
+  HISTORIC *
+ after WCFAGB, IER=           2
+ 
+ Running EMA for station 
+ 04045500       USGS TAHQUAMENON RIVER NEAR PARADISE, MI             1954-2017 *
+  HISTORIC *
+ calling RUNEMA: NPKS,NSYS,GENSKU,RMSEGS          64          64  0.1200000    
+  0.2000000    
+ 
+ calling EMAFIT with the following input Args:
+ NOBS:          64
+         QLow        QUpr         TLow        TUpr        DType
+       4850.0      4850.0    0.1000D-98    0.1000D+21     Syst
+       4850.0      4850.0    0.1000D-98    0.1000D+21     Syst
+       3340.0      3340.0    0.1000D-98    0.1000D+21     Syst
+       5740.0      5740.0    0.1000D-98    0.1000D+21     Syst
+       2770.0      2770.0    0.1000D-98    0.1000D+21     Syst
+       4520.0      4520.0    0.1000D-98    0.1000D+21     Syst
+       6990.0      6990.0    0.1000D-98    0.1000D+21     Syst
+       2680.0      2680.0    0.1000D-98    0.1000D+21     Syst
+       4590.0      4590.0    0.1000D-98    0.1000D+21     Syst
+       3810.0      3810.0    0.1000D-98    0.1000D+21     Syst
+       4490.0      4490.0    0.1000D-98    0.1000D+21     Syst
+       4300.0      4300.0    0.1000D-98    0.1000D+21     Syst
+       2970.0      2970.0    0.1000D-98    0.1000D+21     Syst
+       4790.0      4790.0    0.1000D-98    0.1000D+21     Syst
+       4260.0      4260.0    0.1000D-98    0.1000D+21     Syst
+       5240.0      5240.0    0.1000D-98    0.1000D+21     Syst
+       3770.0      3770.0    0.1000D-98    0.1000D+21     Syst
+       5980.0      5980.0    0.1000D-98    0.1000D+21     Syst
+       6540.0      6540.0    0.1000D-98    0.1000D+21     Syst
+       3000.0      3000.0    0.1000D-98    0.1000D+21     Syst
+       4980.0      4980.0    0.1000D-98    0.1000D+21     Syst
+       4590.0      4590.0    0.1000D-98    0.1000D+21     Syst
+       5360.0      5360.0    0.1000D-98    0.1000D+21     Syst
+       5600.0      5600.0    0.1000D-98    0.1000D+21     Syst
+       4200.0      4200.0    0.1000D-98    0.1000D+21     Syst
+       5520.0      5520.0    0.1000D-98    0.1000D+21     Syst
+       4260.0      4260.0    0.1000D-98    0.1000D+21     Syst
+       4730.0      4730.0    0.1000D-98    0.1000D+21     Syst
+       5140.0      5140.0    0.1000D-98    0.1000D+21     Syst
+       3050.0      3050.0    0.1000D-98    0.1000D+21     Syst
+       3480.0      3480.0    0.1000D-98    0.1000D+21     Syst
+       6700.0      6700.0    0.1000D-98    0.1000D+21     Syst
+       5360.0      5360.0    0.1000D-98    0.1000D+21     Syst
+       2170.0      2170.0    0.1000D-98    0.1000D+21     Syst
+       5620.0      5620.0    0.1000D-98    0.1000D+21     Syst
+       3240.0      3240.0    0.1000D-98    0.1000D+21     Syst
+       3060.0      3060.0    0.1000D-98    0.1000D+21     Syst
+       4790.0      4790.0    0.1000D-98    0.1000D+21     Syst
+       3750.0      3750.0    0.1000D-98    0.1000D+21     Syst
+       3300.0      3300.0    0.1000D-98    0.1000D+21     Syst
+       4110.0      4110.0    0.1000D-98    0.1000D+21     Syst
+       2530.0      2530.0    0.1000D-98    0.1000D+21     Syst
+       5120.0      5120.0    0.1000D-98    0.1000D+21     Syst
+       3840.0      3840.0    0.1000D-98    0.1000D+21     Syst
+       3880.0      3880.0    0.1000D-98    0.1000D+21     Syst
+       4230.0      4230.0    0.1000D-98    0.1000D+21     Syst
+       3560.0      3560.0    0.1000D-98    0.1000D+21     Syst
+       5290.0      5290.0    0.1000D-98    0.1000D+21     Syst
+       5870.0      5870.0    0.1000D-98    0.1000D+21     Syst
+       5180.0      5180.0    0.1000D-98    0.1000D+21     Syst
+       3720.0      3720.0    0.1000D-98    0.1000D+21     Syst
+       4180.0      4180.0    0.1000D-98    0.1000D+21     Syst
+       3290.0      3290.0    0.1000D-98    0.1000D+21     Syst
+       3860.0      3860.0    0.1000D-98    0.1000D+21     Syst
+       5770.0      5770.0    0.1000D-98    0.1000D+21     Syst
+       3140.0      3140.0    0.1000D-98    0.1000D+21     Syst
+       2800.0      2800.0    0.1000D-98    0.1000D+21     Syst
+       3500.0      3500.0    0.1000D-98    0.1000D+21     Syst
+       2900.0      2900.0    0.1000D-98    0.1000D+21     Syst
+       4920.0      4920.0    0.1000D-98    0.1000D+21     Syst
+       6050.0      6050.0    0.1000D-98    0.1000D+21     Syst
+       4790.0      4790.0    0.1000D-98    0.1000D+21     Syst
+       3260.0      3260.0    0.1000D-98    0.1000D+21     Syst
+       3940.0      3940.0    0.1000D-98    0.1000D+21     Syst
+ REGSTD:   1.00000000000000     
+ GENSDMSE:  -999.000000000000     
+ REGSKEW:  0.120000004768372     
+ REGMSE:  4.000000283122063E-002
+ GBTYPE:MGBT
+ GBTHRSH  -99.0000000000000     
+ 
+ Plotting positions of all values
+ NOBS:          64
+         QLow        QUpr         TLow        TUpr       Q       PPos
+       4850.0      4850.0    0.1000D-98    0.1000D+21      4850.0       0.338
+       4850.0      4850.0    0.1000D-98    0.1000D+21      4850.0       0.323
+       3340.0      3340.0    0.1000D-98    0.1000D+21      3340.0       0.754
+       5740.0      5740.0    0.1000D-98    0.1000D+21      5740.0       0.123
+       2770.0      2770.0    0.1000D-98    0.1000D+21      2770.0       0.939
+       4520.0      4520.0    0.1000D-98    0.1000D+21      4520.0       0.446
+       6990.0      6990.0    0.1000D-98    0.1000D+21      6990.0       0.015
+       2680.0      2680.0    0.1000D-98    0.1000D+21      2680.0       0.954
+       4590.0      4590.0    0.1000D-98    0.1000D+21      4590.0       0.431
+       3810.0      3810.0    0.1000D-98    0.1000D+21      3810.0       0.646
+       4490.0      4490.0    0.1000D-98    0.1000D+21      4490.0       0.462
+       4300.0      4300.0    0.1000D-98    0.1000D+21      4300.0       0.477
+       2970.0      2970.0    0.1000D-98    0.1000D+21      2970.0       0.892
+       4790.0      4790.0    0.1000D-98    0.1000D+21      4790.0       0.385
+       4260.0      4260.0    0.1000D-98    0.1000D+21      4260.0       0.508
+       5240.0      5240.0    0.1000D-98    0.1000D+21      5240.0       0.231
+       3770.0      3770.0    0.1000D-98    0.1000D+21      3770.0       0.662
+       5980.0      5980.0    0.1000D-98    0.1000D+21      5980.0       0.077
+       6540.0      6540.0    0.1000D-98    0.1000D+21      6540.0       0.046
+       3000.0      3000.0    0.1000D-98    0.1000D+21      3000.0       0.877
+       4980.0      4980.0    0.1000D-98    0.1000D+21      4980.0       0.292
+       4590.0      4590.0    0.1000D-98    0.1000D+21      4590.0       0.415
+       5360.0      5360.0    0.1000D-98    0.1000D+21      5360.0       0.200
+       5600.0      5600.0    0.1000D-98    0.1000D+21      5600.0       0.154
+       4200.0      4200.0    0.1000D-98    0.1000D+21      4200.0       0.538
+       5520.0      5520.0    0.1000D-98    0.1000D+21      5520.0       0.169
+       4260.0      4260.0    0.1000D-98    0.1000D+21      4260.0       0.492
+       4730.0      4730.0    0.1000D-98    0.1000D+21      4730.0       0.400
+       5140.0      5140.0    0.1000D-98    0.1000D+21      5140.0       0.262
+       3050.0      3050.0    0.1000D-98    0.1000D+21      3050.0       0.862
+       3480.0      3480.0    0.1000D-98    0.1000D+21      3480.0       0.738
+       6700.0      6700.0    0.1000D-98    0.1000D+21      6700.0       0.031
+       5360.0      5360.0    0.1000D-98    0.1000D+21      5360.0       0.185
+       2170.0      2170.0    0.1000D-98    0.1000D+21      2170.0       0.985
+       5620.0      5620.0    0.1000D-98    0.1000D+21      5620.0       0.138
+       3240.0      3240.0    0.1000D-98    0.1000D+21      3240.0       0.815
+       3060.0      3060.0    0.1000D-98    0.1000D+21      3060.0       0.846
+       4790.0      4790.0    0.1000D-98    0.1000D+21      4790.0       0.369
+       3750.0      3750.0    0.1000D-98    0.1000D+21      3750.0       0.677
+       3300.0      3300.0    0.1000D-98    0.1000D+21      3300.0       0.769
+       4110.0      4110.0    0.1000D-98    0.1000D+21      4110.0       0.569
+       2530.0      2530.0    0.1000D-98    0.1000D+21      2530.0       0.969
+       5120.0      5120.0    0.1000D-98    0.1000D+21      5120.0       0.277
+       3840.0      3840.0    0.1000D-98    0.1000D+21      3840.0       0.631
+       3880.0      3880.0    0.1000D-98    0.1000D+21      3880.0       0.600
+       4230.0      4230.0    0.1000D-98    0.1000D+21      4230.0       0.523
+       3560.0      3560.0    0.1000D-98    0.1000D+21      3560.0       0.708
+       5290.0      5290.0    0.1000D-98    0.1000D+21      5290.0       0.215
+       5870.0      5870.0    0.1000D-98    0.1000D+21      5870.0       0.092
+       5180.0      5180.0    0.1000D-98    0.1000D+21      5180.0       0.246
+       3720.0      3720.0    0.1000D-98    0.1000D+21      3720.0       0.692
+       4180.0      4180.0    0.1000D-98    0.1000D+21      4180.0       0.554
+       3290.0      3290.0    0.1000D-98    0.1000D+21      3290.0       0.785
+       3860.0      3860.0    0.1000D-98    0.1000D+21      3860.0       0.615
+       5770.0      5770.0    0.1000D-98    0.1000D+21      5770.0       0.108
+       3140.0      3140.0    0.1000D-98    0.1000D+21      3140.0       0.831
+       2800.0      2800.0    0.1000D-98    0.1000D+21      2800.0       0.923
+       3500.0      3500.0    0.1000D-98    0.1000D+21      3500.0       0.723
+       2900.0      2900.0    0.1000D-98    0.1000D+21      2900.0       0.908
+       4920.0      4920.0    0.1000D-98    0.1000D+21      4920.0       0.308
+       6050.0      6050.0    0.1000D-98    0.1000D+21      6050.0       0.061
+       4790.0      4790.0    0.1000D-98    0.1000D+21      4790.0       0.354
+       3260.0      3260.0    0.1000D-98    0.1000D+21      3260.0       0.800
+       3940.0      3940.0    0.1000D-98    0.1000D+21      3940.0       0.585
+ 
+ Plotting positions of Thresholds
+          0.0       1.000
+ 
+ RESULTS
+ WRCMOM-1  0.36235514D+01  0.13114228D-01  0.93581250D-02
+ WRCMOM-2  0.36235514D+01  0.13114228D-01 -0.25925885D+00
+ WRCMOM-3  0.36235514D+01  0.13114228D-01  0.93581250D-02
+ 
+ Moments:   3.623551      0.1145174      9.3581248E-03
+ 
+ Plotting Positions of peaks
+ Plot Pos      Obs. Q
+  0.3384382       4850.000    
+  0.3230514       4850.000    
+  0.7538828       3340.000    
+  0.1230225       5740.000    
+  0.9385248       2770.000    
+  0.4461461       4520.000    
+  1.5314708E-02   6990.000    
+  0.9539116       2680.000    
+  0.4307593       4590.000    
+  0.6461749       3810.000    
+  0.4615329       4490.000    
+  0.4769197       4300.000    
+  0.8923643       2970.000    
+  0.3845987       4790.000    
+  0.5076934       4260.000    
+  0.2307304       5240.000    
+  0.6615618       3770.000    
+  7.6862045E-02   5980.000    
+  4.6088379E-02   6540.000    
+  0.8769774       3000.000    
+  0.2922777       4980.000    
+  0.4153724       4590.000    
+  0.1999567       5360.000    
+  0.1537962       5600.000    
+  0.5384671       4200.000    
+  0.1691831       5520.000    
+  0.4923066       4260.000    
+  0.3999856       4730.000    
+  0.2615041       5140.000    
+  0.8615906       3050.000    
+  0.7384959       3480.000    
+  3.0701544E-02   6700.000    
+  0.1845699       5360.000    
+  0.9846853       2170.000    
+  0.1384094       5620.000    
+  0.8154301       3240.000    
+  0.8462038       3060.000    
+  0.3692119       4790.000    
+  0.6769486       3750.000    
+  0.7692696       3300.000    
+  0.5692407       4110.000    
+  0.9692985       2530.000    
+  0.2768909       5120.000    
+  0.6307881       3840.000    
+  0.6000144       3880.000    
+  0.5230802       4230.000    
+  0.7077222       3560.000    
+  0.2153436       5290.000    
+  9.2248879E-02   5870.000    
+  0.2461172       5180.000    
+  0.6923354       3720.000    
+  0.5538539       4180.000    
+  0.7846565       3290.000    
+  0.6154013       3860.000    
+  0.1076357       5770.000    
+  0.8308169       3140.000    
+  0.9231380       2800.000    
+  0.7231091       3500.000    
+  0.9077511       2900.000    
+  0.3076646       4920.000    
+  6.1475214E-02   6050.000    
+  0.3538251       4790.000    
+  0.8000433       3260.000    
+  0.5846276       3940.000    
+ 
+ Threshold positions
+ Plot Pos     Threshold    NumPeaks
+   1.00000000000000       -99.0000000000000                0
+ 
+   Prob       EMA Est.        CL Low       CL High
+ 0.0005      1772.080      1333.771      2101.222         0.002
+ 0.0010      1867.208      1441.522      2184.589         0.002
+ 0.0020      1973.570      1562.432      2278.834         0.001
+ 0.0050      2135.899      1747.268      2424.804         0.001
+ 0.0100      2279.987      1911.071      2556.553         0.001
+ 0.0200      2448.706      2101.871      2713.422         0.001
+ 0.0250      2509.628      2170.375      2770.747         0.001
+ 0.0400      2651.165      2328.497      2905.293         0.001
+ 0.0500      2725.789      2411.204      2976.987         0.000
+ 0.1000      2998.518      2708.911      3243.290         0.000
+ 0.2000      3366.041      3097.357      3612.298         0.000
+ 0.3000      3659.057      3396.381      3914.658         0.000
+ 0.3333      3750.333      3487.709      4010.361         0.000
+ 0.4000      3929.812      3664.948      4200.742         0.000
+ 0.4296      4009.257      3742.462      4285.978         0.000
+ 0.5000      4201.194      3927.502      4494.478         0.000
+ 0.5708      4403.617      4119.445      4718.548         0.000
+ 0.6000      4491.555      4201.866      4817.309         0.000
+ 0.7000      4824.748      4509.171      5199.907         0.000
+ 0.8000      5246.615      4887.627      5705.104         0.000
+ 0.9000      5894.209      5446.712      6530.489         0.000
+ 0.9500      6489.628      5937.971      7345.881         0.001
+ 0.9600      6674.268      6085.940      7609.969         0.001
+ 0.9750      7055.186      6384.777      8171.724         0.001
+ 0.9800      7232.954      6521.321      8441.726         0.001
+ 0.9900      7775.824      6927.110      9297.365         0.001
+ 0.9950      8308.737      7309.655     10183.374         0.001
+ 0.9980      9004.355      7786.793     11409.863         0.002
+ 0.9990      9527.187      8129.880     12385.036         0.002
+ 0.9999     11265.022      9184.433     15969.690         0.003
+ 1.0000     13031.528     10139.821     20188.910         0.005
+ 1.0000     14840.740     11017.861     25164.195         0.008
+ After INPUT - NSYS,NHIST,EMAOPT           0           0           1
+ After UPDATEPEAKS - NSYS,NHIST,EMAOPT           0           0           1
+ Closing output file C:\Users\Hail\Desktop\Classes\CEE-5350-Watershed-Hydrology-
+ and-Ecosystem-Processes\Homework\Project-03\PEAKFLOW.P
