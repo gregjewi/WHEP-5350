@@ -19,6 +19,11 @@ Welcome to Watershed Hydrology and Ecosystem Processes Notes's documentation!
    2-8-2019
    2-11-2019
    2-13-2019
+   2-18-2019
+   2-25-2019
+   2-27-2019
+   3-1-2019
+   3-6-2019
 
 
 Indices and tables

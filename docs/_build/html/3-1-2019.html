@@ -1,5 +1,4 @@
 
-
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
@@ -7,7 +6,7 @@
   <head>
     <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>Index &#8212; Watershed Hydrology and Ecosystem Processes Notes  documentation</title>
+    <title>3/1/2019 Notes &#8212; Watershed Hydrology and Ecosystem Processes Notes  documentation</title>
     <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
     <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
@@ -15,8 +14,9 @@
     <script type="text/javascript" src="_static/underscore.js"></script>
     <script type="text/javascript" src="_static/doctools.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-    <link rel="index" title="Index" href="#" />
+    <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="2/27/2019 Notes" href="2-27-2019.html" />
    
   <link rel="stylesheet" href="_static/custom.css" type="text/css" />
   
@@ -33,11 +33,51 @@
 
           <div class="body" role="main">
             
-
-<h1 id="index">Index</h1>
-
-<div class="genindex-jumpbox">
- 
+  <div class="section" id="notes">
+<h1>3/1/2019 Notes<a class="headerlink" href="#notes" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="nrcs-scs-runoff-method">
+<h2>NRCS (SCS) Runoff Method<a class="headerlink" href="#nrcs-scs-runoff-method" title="Permalink to this headline">¶</a></h2>
+<img alt="_images/SCS_1.PNG" src="_images/SCS_1.PNG" />
+<p>Water Balance:</p>
+<blockquote>
+<div><p><span class="math notranslate nohighlight">\(P = P_{e} + I_{a} + F_{a}\)</span></p>
+<p><span class="math notranslate nohighlight">\(P_{e} = P - I_{a} - F_{a}\)</span> while <span class="math notranslate nohighlight">\(P \geq I_{a}\)</span></p>
+</div></blockquote>
+<img alt="_images/SCS_2.PNG" src="_images/SCS_2.PNG" />
+<p>Define:</p>
+<blockquote>
+<div><ul class="simple">
+<li><span class="math notranslate nohighlight">\(S\)</span> as the potential maximum retention storage. <span class="math notranslate nohighlight">\(F_{a}\)</span> is a thought of as a fraction of the storage, <span class="math notranslate nohighlight">\(S\)</span>, <span class="math notranslate nohighlight">\(\frac{F_{a}}{S}\)</span></li>
+</ul>
+</div></blockquote>
+<p>This means:</p>
+<blockquote>
+<div><span class="math notranslate nohighlight">\(\frac{F_{a}}{S} = \frac{P_{e}}{P-I_{a}}\)</span></div></blockquote>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">The above is the basis as the <strong>SCS Assumption</strong>.</p>
+</div>
+<p>Substituting and solving…</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}P_{e} = \begin{array}{cc}
+\{ &amp;
+\begin{array}{cc}
+0 &amp; P \leq I_{a} \\
+{\frac{P-I_{a}}{P-I_{a} + S}} &amp; P \geq I_{a} \\
+\end{array}
+\end{array}\end{split}\]</div>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">A common SCS assumption <span class="math notranslate nohighlight">\(I_{a} = 0.2 \times S\)</span>. <strong>Model becomes 1 parameter model of :math:`S`.</strong></p>
+</div>
+<p><span class="math notranslate nohighlight">\(S\)</span> is abstracted/related to the runoff curve number, <span class="math notranslate nohighlight">\(CN\)</span>, which <span class="math notranslate nohighlight">\(0&lt;CN&lt;100\)</span>.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last"><span class="math notranslate nohighlight">\(S = \frac{1000}{CN} - 10\)</span></p>
+</div>
+<p><code class="docutils literal notranslate"><span class="pre">NOW</span> <span class="pre">WE</span> <span class="pre">DO</span> <span class="pre">AN</span> <span class="pre">EXAMPLE!!!</span> <span class="pre">WOOOOOOOH</span></code></p>
+<img alt="_images/SCS_3.PNG" src="_images/SCS_3.PNG" />
+</div>
 </div>
 
 
@@ -58,7 +98,7 @@
 
 <h3>Navigation</h3>
 <p class="caption"><span class="caption-text">Contents:</span></p>
-<ul>
+<ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="1-18-2019.html">1/18/2019 Notes</a></li>
 <li class="toctree-l1"><a class="reference internal" href="1-25-2019.html">1/25/2019 Notes</a></li>
 <li class="toctree-l1"><a class="reference internal" href="1-28-2019.html">1/28/2019 Notes</a></li>
@@ -71,14 +111,17 @@
 <li class="toctree-l1"><a class="reference internal" href="2-18-2019.html">2/13/2019 Notes</a></li>
 <li class="toctree-l1"><a class="reference internal" href="2-25-2019.html">2/25/2019 Notes</a></li>
 <li class="toctree-l1"><a class="reference internal" href="2-27-2019.html">2/27/2019 Notes</a></li>
-<li class="toctree-l1"><a class="reference internal" href="3-1-2019.html">3/1/2019 Notes</a></li>
-<li class="toctree-l1"><a class="reference internal" href="3-6-2019.html">3/6/2019 Notes</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">3/1/2019 Notes</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#nrcs-scs-runoff-method">NRCS (SCS) Runoff Method</a></li>
+</ul>
+</li>
 </ul>
 
 <div class="relations">
 <h3>Related Topics</h3>
 <ul>
   <li><a href="index.html">Documentation overview</a><ul>
+      <li>Previous: <a href="2-27-2019.html" title="previous chapter">2/27/2019 Notes</a></li>
   </ul></li>
 </ul>
 </div>
@@ -105,6 +148,9 @@
       Powered by <a href="http://sphinx-doc.org/">Sphinx 1.7.6</a>
       &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.11</a>
       
+      |
+      <a href="_sources/3-1-2019.rst.txt"
+          rel="nofollow">Page source</a>
     </div>
 
     

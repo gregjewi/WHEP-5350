@@ -1,0 +1,24 @@
+=======================
+2/25/2019 Notes
+=======================
+
+``This is basically an admin class. Talk about exam and homework``
+
+Exam Talk
+=========
+**DUE WEDNESDAY MARCH 6th**.
+Showed us a rubric of the SWD program. 
+Designing an that will test that SWD rubric.
+Take-home sheet passed out.
+
+Demonstrate that you can communicate with stakeholders (ie. the public.)
+
+Prepare a hydrologic assessment report.
+
+- Pick any watershed you'd like. (PICK YOU HW WATERSHED.)
+- Think about the political context and which group who be appriopriate to receive the report.
+
+``Making some notes about graphs``
+
+``Mean Valued Data: average daily temp, precip, inflow volume etc.``
+

@@ -1,0 +1,32 @@
+=======================
+2/13/2019 Notes
+=======================
+
+``At the beginning of class we review the USACE Schedules A-1, 2, 3... still confusing``
+``I made a postscript highlighting this discussion in 2-8-2018 notes.``
+
+ELOHA
+======
+
+Social Process
+---------------
+Use science to manage flows.
+
+**Step 1**: Determine acceptable ecological conditions.
+
+	Stakeholder process/based on societal values.
+	Some managed for fair/good conditions (not excellent/pristine)
+
+**Step 2**: Develop Environmental Flow Targets
+
+	Use flow-alteration ecological response functions.
+
+**Step 3**: Implement environmental flow management
+	
+	Monitoring for Evaluation: continuously improve outcomes.
+	Buzzword for this is **Adaption Management** exercise.
+
+
+``Posted slides about the technical process. We need to review them alone.``
+
+``Rest of the class spent on presentation

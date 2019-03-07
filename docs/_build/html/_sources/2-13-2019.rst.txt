@@ -51,8 +51,13 @@ Geographic (regional) Approach
 Scientific Process
 ^^^^^^^^^^^^^^^^^^^^
 
+``Wants to conceptualize this with a graph.``
+
 Develop Flow Alteration and Ecological Response.
 
-``Wants to conceptualize this with a graph.``
+	1. **Build the hydrologic foundation**. (Characterize flows.) Get baseline observation (pre- & post- alteration), Hydrologic simulation models (prediction at ungaged sites, or alterations for a proposed change.)
+	2. **Classify River Segments**. Look at the similarity of ecologically relevant flow statistics.
+	3. **Computing the Flow Alteration**.  Group river segments based on evaluation of conditions. Deviation for baseline conditions.
+	4. **Develop Flow Alteration - Ecological Response function**. See figure below.
 
 .. figure:: images/FlowAlterationEcologicalResponseCurve.jpg

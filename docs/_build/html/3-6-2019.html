@@ -1,0 +1,220 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>3/6/2019 Notes &#8212; Watershed Hydrology and Ecosystem Processes Notes  documentation</title>
+    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="3/1/2019 Notes" href="3-1-2019.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="notes">
+<h1>3/6/2019 Notes<a class="headerlink" href="#notes" title="Permalink to this headline">¶</a></h1>
+<p><code class="docutils literal notranslate"><span class="pre">Did</span> <span class="pre">a</span> <span class="pre">quick</span> <span class="pre">run</span> <span class="pre">through</span> <span class="pre">of</span> <span class="pre">some</span> <span class="pre">soil</span> <span class="pre">types:</span> <span class="pre">alluvial,</span> <span class="pre">colluvial,</span> <span class="pre">lusts,</span> <span class="pre">glacial</span> <span class="pre">till,</span> <span class="pre">etc.</span></code></p>
+<div class="section" id="soils-and-modeling">
+<h2>Soils and Modeling<a class="headerlink" href="#soils-and-modeling" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="soil-properties">
+<h3>Soil Properties<a class="headerlink" href="#soil-properties" title="Permalink to this headline">¶</a></h3>
+<p><strong>Soil Porosity</strong>, <span class="math notranslate nohighlight">\(\zeta\)</span>, is defined by:</p>
+<blockquote>
+<div><span class="math notranslate nohighlight">\(\zeta = \frac{V_{v}}{V}\)</span></div></blockquote>
+<p>where:</p>
+<blockquote>
+<div><ul class="simple">
+<li><span class="math notranslate nohighlight">\(V_{v}\)</span> is the pore volume,</li>
+<li><span class="math notranslate nohighlight">\(V\)</span> is the total volume</li>
+</ul>
+</div></blockquote>
+<p><strong>Soil Water Content</strong>, <span class="math notranslate nohighlight">\(\Theta\)</span>, is defined as:</p>
+<blockquote>
+<div><span class="math notranslate nohighlight">\(\Theta = \frac{V_{w}}{V}\)</span></div></blockquote>
+<p>where:</p>
+<blockquote>
+<div><ul class="simple">
+<li><span class="math notranslate nohighlight">\(V_{w}\)</span> is the volume of water in the control volume</li>
+<li><span class="math notranslate nohighlight">\(V\)</span> is the total volume of the control volume</li>
+</ul>
+</div></blockquote>
+<p>Rule of thumb:</p>
+<blockquote>
+<div><span class="math notranslate nohighlight">\(\Theta_{r} \leq \Theta \leq \zeta\)</span></div></blockquote>
+<p>Check out the diagram below for vocab for different locations. In the saturated zone, all pore space is filled with water, ie no water.</p>
+<img alt="_images/SoilMoistureZones.gif" src="_images/SoilMoistureZones.gif" />
+</div>
+<div class="section" id="soil-water-movement">
+<h3>Soil Water Movement<a class="headerlink" href="#soil-water-movement" title="Permalink to this headline">¶</a></h3>
+<p><code class="docutils literal notranslate"><span class="pre">Drawing</span> <span class="pre">a</span> <span class="pre">pic</span> <span class="pre">on</span> <span class="pre">the</span> <span class="pre">board</span> <span class="pre">to</span> <span class="pre">work</span> <span class="pre">toward</span> <span class="pre">&quot;Darcy</span> <span class="pre">Flux&quot;.</span></code></p>
+<dl class="docutils">
+<dt>Darcy Flux, with length, L, over time, T, is represented as:</dt>
+<dd><span class="math notranslate nohighlight">\(q = \frac{Q}{A}\)</span></dd>
+</dl>
+<div class="section" id="conservation-of-mass">
+<h4>Conservation of Mass<a class="headerlink" href="#conservation-of-mass" title="Permalink to this headline">¶</a></h4>
+<blockquote>
+<div><span class="math notranslate nohighlight">\(\frac{\partial \Theta}{\partial t} = \frac{\partial q}{\partial z}\)</span></div></blockquote>
+</div>
+<div class="section" id="conservation-of-energy">
+<h4>Conservation of Energy<a class="headerlink" href="#conservation-of-energy" title="Permalink to this headline">¶</a></h4>
+<dl class="docutils">
+<dt>Total Hydraulic Head (<span class="math notranslate nohighlight">\(h\)</span> with length L)</dt>
+<dd><span class="math notranslate nohighlight">\(h = \frac{P_{c}}{\gamma} + z\)</span></dd>
+<dt>where:</dt>
+<dd><ul class="first last simple">
+<li><span class="math notranslate nohighlight">\(P_{c}\)</span> is the Pressure term</li>
+<li><span class="math notranslate nohighlight">\(\gamma\)</span> is the unit weight (specific weight) of water (<span class="math notranslate nohighlight">\(\gamma= \rho \times g\)</span>)</li>
+<li><span class="math notranslate nohighlight">\(z\)</span> is the elevation</li>
+</ul>
+</dd>
+</dl>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">We can ignore the term <span class="math notranslate nohighlight">\(\frac{v^{2}}{2g}\)</span> because velocity is really really small compared to the terms in the energy equation.</p>
+</div>
+<dl class="docutils">
+<dt>The first term is commonly thought of as the suction pressure (negative), and called the “<strong>matrix or capillary potential</strong>” or <span class="math notranslate nohighlight">\(\Psi (\Theta)\)</span>.</dt>
+<dd><span class="math notranslate nohighlight">\(h = \Psi (\Theta) + z\)</span></dd>
+</dl>
+</div>
+<div class="section" id="conservation-of-momentum">
+<h4>Conservation of Momentum<a class="headerlink" href="#conservation-of-momentum" title="Permalink to this headline">¶</a></h4>
+<dl class="docutils">
+<dt>Conservation of momentum for groundwater flow is refered to as <a class="reference external" href="https://en.wikipedia.org/wiki/Darcy%27s_law">Darcy’s Law</a>:</dt>
+<dd><span class="math notranslate nohighlight">\(q = -K(\Theta) \frac{\partial h}{\partial z}\)</span></dd>
+<dt>where:</dt>
+<dd><ul class="first last simple">
+<li><span class="math notranslate nohighlight">\(K(\Theta)\)</span> is the <em>hydraulic conductivity</em></li>
+</ul>
+</dd>
+</dl>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last"><strong>HOMEWORK</strong> <span class="math notranslate nohighlight">\(q = - \overline{K(\Theta)} \frac{\Delta h}{\Delta z}\)</span></p>
+</div>
+</div>
+</div>
+<div class="section" id="d-unsaturated-flow">
+<h3>1-D Unsaturated Flow<a class="headerlink" href="#d-unsaturated-flow" title="Permalink to this headline">¶</a></h3>
+<dl class="docutils">
+<dt>Combine conservation of mass and momentum equation:</dt>
+<dd><p class="first"><span class="math notranslate nohighlight">\(\frac{\partial \Theta}{\partial t} = - \frac{\partial q}{\partial z} = + \frac{\partial}{\partial z} \left[ K(\Theta) \frac{\partial h}{\partial z} \right]\)</span></p>
+<p>…</p>
+<p>simplifying to the <strong>Richard’s Equation</strong></p>
+<p>…</p>
+<p><span class="math notranslate nohighlight">\(\frac{\partial \Theta}{\partial t} = \frac{\partial}{\partial z} \left(D(\Theta) \frac{\partial \Theta}{\partial z} \right) + \frac{\partial K(\Theta)}{\partial z}\)</span></p>
+<p>…</p>
+<p>written another way</p>
+<p>…</p>
+<p class="last"><span class="math notranslate nohighlight">\(D(\Theta) = K(\Theta) \frac{\partial \Psi(\Theta)}{\partial z}\)</span></p>
+</dd>
+</dl>
+<p><code class="docutils literal notranslate"><span class="pre">Photos</span> <span class="pre">of</span> <span class="pre">Brooks-Corey...</span></code></p>
+<img alt="_images/BrooksCorey1.PNG" src="_images/BrooksCorey1.PNG" />
+<img alt="_images/BrooksCorey2.PNG" src="_images/BrooksCorey2.PNG" />
+</div>
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="index.html">Watershed Hydrology and Ecosystem Processes Notes</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<p class="caption"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="1-18-2019.html">1/18/2019 Notes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="1-25-2019.html">1/25/2019 Notes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="1-28-2019.html">1/28/2019 Notes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="2-1-2019.html">2/1/2019 Notes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="2-4-2019.html">2/4/2019 Notes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="2-6-2019.html">2/6/2019 Notes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="2-8-2019.html">2/8/2019 Notes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="2-11-2019.html">2/11/2019 Notes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="2-13-2019.html">2/13/2019 Notes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="2-18-2019.html">2/13/2019 Notes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="2-25-2019.html">2/25/2019 Notes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="2-27-2019.html">2/27/2019 Notes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="3-1-2019.html">3/1/2019 Notes</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">3/6/2019 Notes</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#soils-and-modeling">Soils and Modeling</a></li>
+</ul>
+</li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+      <li>Previous: <a href="3-1-2019.html" title="previous chapter">3/1/2019 Notes</a></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2019, Gregory Ewing.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.7.6</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.11</a>
+      
+      |
+      <a href="_sources/3-6-2019.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>
