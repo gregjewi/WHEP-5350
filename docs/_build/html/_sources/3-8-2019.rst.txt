@@ -1,0 +1,177 @@
+=========================
+3/8/2019 Notes
+=========================
+
+``Did a quick run through of some soil types: alluvial, colluvial, lusts, glacial till, etc.``
+
+Rainfall Infiltration into the Ground
+======================================
+
+Richards Equation (PDE)
+-------------------------
+
+:math:`\frac{\partial \Theta}{\partial t} = \frac{\partial}{\partial z} \left(D(\Theta) \frac{\partial \Theta}{\partial z} \right) + \frac{\partial K(\Theta)}{\partial z}`
+
+
+Looking at the equation, :math:`\Theta = f(t,z)`. We have some bounding cases.
+	
+	- **Case 1**: Supply Limited
+
+		:math:`\Theta(t,0) < \zeta` (not saturated at surface)
+		:math:`q(t,0) = -i(t)`
+
+	- **Case 2**: Transport Limited
+
+		:math:`\Theta(t,0) = zeta` (Saturated at the surface; ponded)
+		:math:`Psi(t,0) = h(t)` (pressure, Boundary Condition)
+
+
+Given the complexity of this problem, we want to find a simplification. Luckily some badass people back in 1911 found an exact analytical solution of Richard's equation in and idealized approximate condition. It's called **Green-Ampt Equation**.
+
+
+.. image:: images/Green-Ampt-1.PNG
+
+
+We make an assumption that there is a clear, step-wise wetted front. Having that wetted front, we know the exact solution for this simplified problem.
+
+.. image:: images/GreenAmptInfiltration.jpg
+
+
+**ADD IN CONSERVATION LAWS FROM THE NOTES HERE**
+
+
+Infiltration Calculation
+-----------------------------
+
+For a steady rain rate:
+
+	- **Case 1**: Supply Limited (:math:`t \leq t_{p}`)
+
+		Not saturated at surface, :math:`f = i` *(equals rain rate)*
+
+	- **Case 2**: Transport Limited (:math:`t \geq t_{p}`)
+
+		Ponded (saturated) at the surface... need Green-Ampt, infiltration depends on soil-water hydraulics	
+
+
+		**Potential Infiltration** (:math:`f \ast` or :math:`F \ast`):
+			Infiltration under ponded conditions (Like Green-Ampt Equation)
+
+Potential Infiltration
+^^^^^^^^^^^^^^^^^^^^^^
+
+**Application** 
+
+``Drawing a graph for f* to push t to t_o, where we want our zero to be at a time such that``
+
+	1. **Compute** :math:`t_{p}`
+	2. **Compute** :math:`t_{o}`
+	3. **Compute** Infiltration 
+			for :math:`t<t_{p}`
+				:math:`f(t) = i` and :math:`F(i) = i\times t`
+			
+			for :math:`t > t_{p}`
+				:math:`f(t) = f \ast (t-t_{o})` and :math:`F(t) = F \ast (t-t_{o})`
+
+
+Soil Properties
+----------------
+
+**Soil Porosity**, :math:`\zeta`, is defined by:
+
+	:math:`\zeta = \frac{V_{v}}{V}`
+
+where:
+	
+	- :math:`V_{v}` is the pore volume,
+	- :math:`V` is the total volume 
+
+**Soil Water Content**, :math:`\Theta`, is defined as:
+
+	:math:`\Theta = \frac{V_{w}}{V}`
+
+where:
+	
+	- :math:`V_{w}` is the volume of water in the control volume
+	- :math:`V` is the total volume of the control volume
+
+Rule of thumb:
+
+	:math:`\Theta_{r} \leq \Theta \leq \zeta`
+
+
+Check out the diagram below for vocab for different locations. In the saturated zone, all pore space is filled with water, ie no water.
+
+.. image:: images/SoilMoistureZones.gif
+
+
+Soil Water Movement
+-------------------
+
+``Drawing a pic on the board to work toward "Darcy Flux".``
+
+Darcy Flux, with length, L, over time, T, is represented as:
+	:math:`q = \frac{Q}{A}` 
+
+Conservation of Mass
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+	:math:`\frac{\partial \Theta}{\partial t} = \frac{\partial q}{\partial z}`
+
+Conservation of Energy
+^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Total Hydraulic Head (:math:`h` with length L)
+	:math:`h = \frac{P_{c}}{\gamma} + z`
+
+where:
+	- :math:`P_{c}` is the Pressure term
+	- :math:`\gamma` is the unit weight (specific weight) of water (:math:`\gamma= \rho \times g`)
+	- :math:`z` is the elevation
+
+.. note:: We can ignore the term :math:`\frac{v^{2}}{2g}` because velocity is really really small compared to the terms in the energy equation.
+
+The first term is commonly thought of as the suction pressure (negative), and called the "**matrix or capillary potential**" or :math:`\Psi (\Theta)`.
+	:math:`h = \Psi (\Theta) + z`
+
+Conservation of Momentum
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Conservation of momentum for groundwater flow is refered to as `Darcy's Law <https://en.wikipedia.org/wiki/Darcy%27s_law>`_:
+	:math:`q = -K(\Theta) \frac{\partial h}{\partial z}`
+
+where:
+	- :math:`K(\Theta)` is the *hydraulic conductivity*
+
+
+.. note:: **HOMEWORK** :math:`q = - \overline{K(\Theta)} \frac{\Delta h}{\Delta z}`
+
+
+1-D Unsaturated Flow
+-----------------------
+Combine conservation of mass and momentum equation:
+	:math:`\frac{\partial \Theta}{\partial t} = - \frac{\partial q}{\partial z} = + \frac{\partial}{\partial z} \left[ K(\Theta) \frac{\partial h}{\partial z} \right]`
+
+	...
+
+	simplifying to the **Richard's Equation**
+
+	...
+
+	:math:`\frac{\partial \Theta}{\partial t} = \frac{\partial}{\partial z} \left(D(\Theta) \frac{\partial \Theta}{\partial z} \right) + \frac{\partial K(\Theta)}{\partial z}`
+
+	...
+
+	written another way
+
+	...
+
+	:math:`D(\Theta) = K(\Theta) \frac{\partial \Psi(\Theta)}{\partial z}`
+
+
+``Photos of Brooks-Corey...``
+
+.. image:: images/BrooksCorey1.PNG
+
+.. image:: images/BrooksCorey2.PNG
+

@@ -34,7 +34,7 @@ Substituting and solving...
 	\{ &
 	\begin{array}{cc}
 	0 & P \leq I_{a} \\
-	{\frac{P-I_{a}}{P-I_{a} + S}} & P \geq I_{a} \\
+	{\frac{(P-I_{a})^2}{P-I_{a} + S}} & P \geq I_{a} \\
 	\end{array}
 	\end{array}
 
